@@ -1,0 +1,36 @@
+{
+    "latex-workworkshop.intellisense.unimathsymbols.enabled": true,
+    "latex-workshop.latex.recipe.default": "latexmk (xelatex)",
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk (xelatex)",
+            "tools": [
+                "xelatexmk"
+            ]
+        }
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "xelatexmk",
+            "command": "latexmk",
+            "args": [
+                "-xelatex",
+                "-synctex=1",
+                "-quiet",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-halt-on-error",
+                "-shell-escape",
+                "-outdir=output",
+                "%DOC%"
+            ]
+        }
+    ],
+    "latex-workshop.latex.clean.fileTypes": [
+        "output/*.aux", "output/*.bbl", "output/*.blg", "output/*.idx", "output/*.ind", "output/*.lof",
+        "output/*.lot", "output/*.out", "output/*.toc", "output/*.acn", "output/*.acr", "output/*.alg",
+        "output/*.glg", "output/*.glo", "output/*.gls", "output/*.ist", "output/*.fls", "output/*.log",
+        "output/*.fdb_latexmk"
+    ]
+}
